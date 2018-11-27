@@ -1,11 +1,1 @@
-
-<h1>ToDo</h1>
-<ul class="todoList" *ngIf="list">
-  <li *ngFor="let todo of listByState(false)">
-      <mat-checkbox [(ngModel)]="todo.state"><b>{{todo.title}}</b></mat-checkbox>
-  </li>
-  <li *ngFor="let todo of listByState(true)" style="text-decoration: line-through;">
-      <mat-checkbox [(ngModel)]="todo.state"><b>{{todo.title}}</b></mat-checkbox>
-  </li>
-</ul>
-
+<router-outlet></router-outlet>

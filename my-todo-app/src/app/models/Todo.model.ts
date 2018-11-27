@@ -1,5 +1,7 @@
 export class Todo {
 
-    constructor(public title: string,
-                public state: Boolean) {}
+    constructor(public id: number,
+                public title: string,
+                public state: Boolean,
+                public description?: string) {}
   }

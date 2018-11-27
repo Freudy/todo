@@ -1,6 +1,6 @@
 [
-    {"title": "Tomates", "state": false},
-    {"title": "Epinards", "state": false},
-    {"title": "Salade", "state": false},
-    {"title": "Beurre", "state": true}
+    {"id":1, "title": "Tomates", "state": false, "description": "coeur de boeuf"},
+    {"id":2, "title": "Epinards", "state": false, "description": "avec de la crême fraîche"},
+    {"id":3, "title": "Salade", "state": false, "description": "feuille de chêne"},
+    {"id":4, "title": "Beurre", "state": true, "description": "pas de margarine"}
 ]
