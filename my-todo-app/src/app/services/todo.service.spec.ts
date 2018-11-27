@@ -13,7 +13,7 @@ describe('TodoService', () => {
   }));
 
   it('should have, at minimal, a related state and title', async((service: TodoService) => {
-    const todo = new Todo('test', true);
+    const todo = new Todo(1, 'test', true);
     expect(todo.title).toBeTruthy();
     expect(todo.state).toBeTruthy();
   }));

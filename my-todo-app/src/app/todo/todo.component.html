@@ -1,0 +1,10 @@
+<ng-container *ngIf="selectedtodo; else idNotFound">
+<h1>Todo #{{selectedtodo.id}}</h1>
+    {{selectedtodo.title}} <br>
+    {{selectedtodo.description}}  <br>
+    Status : {{selectedtodo.state}}  
+</ng-container>
+
+<ng-template #idNotFound>
+  ID not found, please try again.
+</ng-template>

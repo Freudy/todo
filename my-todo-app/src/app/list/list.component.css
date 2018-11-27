@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+}
+li {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 5px;
+    margin: 2px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+li:hover .mat-checkbox{
+    margin-right:15px;
+}
+
+.mat-checkbox {
+    margin-right: 10px;
+}

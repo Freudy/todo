@@ -18,5 +18,4 @@ export class TodoService {
   public getJSON(): Observable<any> {
     return this.http.get('./assets/mocks/Todo.json');
   }
-
 }
