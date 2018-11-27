@@ -10,7 +10,7 @@ import { TodoService } from './services/todo.service';
 export class AppComponent {
   title = 'app';
   list: Todo[];
-  constructor(todoService: TodoService){
+  constructor(todoService: TodoService) {
     // by default list contains "true" (not done yet) items
     todoService.getJSON().subscribe(data => {
       this.list = data;

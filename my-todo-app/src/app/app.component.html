@@ -1,11 +1,11 @@
 
-<h1>Todo list</h1>
-<ul *ngIf="list">
-  <li *ngFor="let todo of listByState(true)">
-    <h2>{{todo.title}}</h2>
+<h1>ToDo</h1>
+<ul class="todoList" *ngIf="list">
+  <li *ngFor="let todo of listByState(false)">
+      <mat-checkbox [(ngModel)]="todo.state"><b>{{todo.title}}</b></mat-checkbox>
   </li>
-  <li *ngFor="let todo of listByState(false)" hidden>
-    <h2 style="text-decoration: line-through;">{{todo.title}}</h2>
+  <li *ngFor="let todo of listByState(true)" style="text-decoration: line-through;">
+      <mat-checkbox [(ngModel)]="todo.state"><b>{{todo.title}}</b></mat-checkbox>
   </li>
 </ul>
 

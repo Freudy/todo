@@ -1,6 +1,6 @@
 [
-    {"title": "un", "state": false},
-    {"title": "deux", "state": true},
-    {"title": "trois", "state": true},
-    {"title": "quatre", "state": true}
+    {"title": "Tomates", "state": false},
+    {"title": "Epinards", "state": false},
+    {"title": "Salade", "state": false},
+    {"title": "Beurre", "state": true}
 ]
