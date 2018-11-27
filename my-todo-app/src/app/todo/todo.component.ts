@@ -16,9 +16,13 @@ export class TodoComponent implements OnInit {
     private service: TodoService) { }
 
   ngOnInit() {
-    this.route.params.subscribe(params => 
+    /*this.route.params.subscribe(params => 
       this.service.getJSON().subscribe(todos => 
-        this.selectedtodo = todos.filter(todo => todo.id == params.id)[0]));
+        this.selectedtodo = todos.filter(todo => todo.id == params.id)[0]));*/
+
+        
+    this.route.params.subscribe(params => 
+      this.selectedtodo = this.service.getList().filter(todo => todo.id == params.id)[0]);
   }
 
 }

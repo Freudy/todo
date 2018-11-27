@@ -1,5 +1,12 @@
 <h1>ToDo</h1>
 <ul class="todoList" *ngIf="list">
+  <li *ngIf="newTodo" id="newtodo">
+    <form (onsubmit)="add()">
+      <input [(ngModel)]="newTodo.title" type="text" name="title" id="newtitle" placeholder="Title" class="newtitle">
+      <input [(ngModel)]="newTodo.description" type="text" name="description" id="newdescription" placeholder="Description" class="newdescription">
+      <input type="submit" (click)="add()" value="+">
+    </form>
+  </li>
   <li *ngFor="let todo of listByState(false)">
       <mat-checkbox [(ngModel)]="todo.state"></mat-checkbox>
       <a routerLink="/todo/{{todo.id}}"><b>{{todo.title}}</b></a>
@@ -9,4 +16,3 @@
       <a routerLink="/todo/{{todo.id}}"><b>{{todo.title}}</b></a>
   </li>
 </ul>
-

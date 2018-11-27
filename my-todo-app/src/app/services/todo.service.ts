@@ -11,11 +11,20 @@ export class TodoService {
 
   constructor(private http: HttpClient) {
     this.getJSON().subscribe(data => {
+      this.list = data;
       console.log(data);
     });
   }
 
   public getJSON(): Observable<any> {
     return this.http.get('./assets/mocks/Todo.json');
+  }
+
+  public add(todo: Todo){
+    this.list.unshift(todo);
+  }
+
+  public getList(){
+    return this.list;
   }
 }
