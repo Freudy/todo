@@ -1,0 +1,6 @@
+[
+    {"title": "Tomates", "state": false},
+    {"title": "Epinards", "state": false},
+    {"title": "Salade", "state": false},
+    {"title": "Beurre", "state": true}
+]
